@@ -1,7 +1,10 @@
 hosts:
 
-  router:
-    ip: 192.168.99.1
+  router (Interface-Overrun):
+    ip: 192.168.3.1
+
+  LAN:
+    ip: 192.168.0.1
 
   proxmox:
     ip: 192.168.99.10
@@ -14,5 +17,6 @@ hosts:
 
   CloudVM:
     ip: 192.168.0.41
+
   AriannaDB-VM:
     ip: 192.168.0.77
