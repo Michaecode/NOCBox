@@ -13,3 +13,11 @@ def tui(hosts_status, time_in_seconds, devices, online, offline):
         else:
             status = "[OFFLINE]"
         print(f"{host['name']:<30}{host['ip']:<18}{status}")
+    print("")
+    print("")
+    print("==========================================")
+    print("Recents Events ")
+    print("==========================================")
+    with open('logs/nocbox.log', "r") as log_file:
+        for line in log_file:
+            print(line.strip())
