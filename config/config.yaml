@@ -1,22 +1,7 @@
+#exemple of a list of IP:
 hosts:
+  router home:
+    ip: 172.16.0.1
 
-  router (Interface-Overrun):
-    ip: 192.168.3.1
-
-  LAN:
-    ip: 192.168.0.1
-
-  proxmox:
-    ip: 192.168.99.10
-
-  idrac:
-    ip: 192.168.99.20
-
-  hpmini:
-    ip: 192.168.99.90
-
-  CloudVM:
-    ip: 192.168.0.41
-
-  AriannaDB-VM:
-    ip: 192.168.0.77
+  switch:
+    ip: 172.16.0.7
