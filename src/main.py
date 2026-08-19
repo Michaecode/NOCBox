@@ -38,7 +38,7 @@ def main():
         time_in_seconds = time.time()
         time_in_seconds = time.ctime(time_in_seconds)
         tui(hosts_status, time_in_seconds, devices, online, offline)
-        time.sleep(10)
+        time.sleep(15)
 
 if __name__ == "__main__":
     main()
