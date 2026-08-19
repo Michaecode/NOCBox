@@ -3,10 +3,10 @@ hosts:
   router home:
     ip: 172.16.0.1
 
-<<<<<<< HEAD
+
   switch:
     ip: 172.16.0.7
-=======
+
   router (Interface-Overrun):
     ip: 192.168.3.1
 
@@ -27,4 +27,3 @@ hosts:
 
   AriannaDB-VM:
     ip: 192.168.0.77
->>>>>>> 444075d (update time between ping main.py)
