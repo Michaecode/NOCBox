@@ -217,6 +217,3 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-
-# Others files
-/config/config.yaml
