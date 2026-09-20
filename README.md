@@ -24,12 +24,44 @@ The project is designed to run on a small dedicated Linux machine and continuous
 - YAML-based configuration
 - Simple terminal user interface (TUI)
 
-## Requirements
+
+## Installation
+### Requirements
 
 - Linux
 - Python 3
 - `ping` command
 - PyYAML
+- git
+
+
+### Clone the repository
+```shell
+git clone https://github.com/Michaecode/NOCBox.git 
+cd NOCBox
+```
+
+### Create a virtual environment
+```shell
+python3 -m venv .venv 
+source .venv/bin/activate
+```
+### Install the dependencies
+```shell
+pip install -r requirements.txt
+```
+### Configuration:
+Copy the example configuration:
+```shell
+cp config/config-example.yaml config/config.yaml
+```
+Edit config/config.yaml and add the hosts you want NOCBox to monitor.
+
+### Run NOCBox
+```shell
+python3 src/main.py
+```
+The dashboard will start in the terminal and refresh automatically.
 
 ## Project structure
 
