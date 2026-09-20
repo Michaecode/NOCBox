@@ -19,5 +19,6 @@ def tui(hosts_status, time_in_seconds, devices, online, offline):
     print("Recents Events ")
     print("==========================================")
     with open('logs/nocbox.log', "r") as log_file:
-        for line in log_file:
-            print(line.strip())
+        lines = log_file.readlines()
+        for line in lines[-5:]:
+            print(line, end='')
