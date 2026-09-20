@@ -1,0 +1,7 @@
+#exemple of a list of IP:
+hosts:
+  router home:
+    ip: 172.16.0.1
+
+  switch:
+    ip: 172.16.0.7
