@@ -24,6 +24,25 @@ The project is designed to run on a small dedicated Linux machine and continuous
 - YAML-based configuration
 - Simple terminal user interface (TUI)
 
+## Project structure
+
+```text
+NOCBox/
+├── src/
+│   ├── main.py
+│   ├── config.py
+│   ├── monitor/
+│   │   └── ping.py
+│   ├── ui/
+│   │   └── screen.py
+│   └── utils/
+│       └── logger.py
+├── config.yml
+├── logs/
+│   └── .gitkeep
+├── .gitignore
+└── README.md
+```
 
 ## Installation
 ### Requirements
@@ -62,23 +81,3 @@ Edit config/config.yaml and add the hosts you want NOCBox to monitor.
 python3 src/main.py
 ```
 The dashboard will start in the terminal and refresh automatically.
-
-## Project structure
-
-```text
-NOCBox/
-├── src/
-│   ├── main.py
-│   ├── config.py
-│   ├── monitor/
-│   │   └── ping.py
-│   ├── ui/
-│   │   └── screen.py
-│   └── utils/
-│       └── logger.py
-├── config.yml
-├── logs/
-│   └── .gitkeep
-├── .gitignore
-└── README.md
-```
