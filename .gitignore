@@ -217,4 +217,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# Local network configuration (use config/config-example.yaml as the template)
+config/config.yaml
+
 config/config.yaml
