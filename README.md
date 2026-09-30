@@ -23,6 +23,10 @@ The project is designed to run on a small dedicated Linux machine and continuous
 - Recent events displayed directly in the dashboard
 - YAML-based configuration
 - Simple terminal user interface (TUI)
+  
+### Features coming soon:
+- Telegram notifications for host state changes.
+- Network discovery for detecting new IP addresses and devices.
 
 ## Project structure
 
