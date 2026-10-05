@@ -23,9 +23,9 @@ The project is designed to run on a small dedicated Linux machine and continuous
 - Recent events displayed directly in the dashboard
 - YAML-based configuration
 - Simple terminal user interface (TUI)
-  
-### Features coming soon:
 - Telegram notifications for host state changes.
+
+### Features coming soon:
 - Network discovery for detecting new IP addresses and devices.
 
 ## Project structure
@@ -79,6 +79,11 @@ Copy the example configuration:
 cp config/config-example.yaml config/config.yaml
 ```
 Edit config/config.yaml and add the hosts you want NOCBox to monitor.
+
+To enable Telegram alerts, set `telegram.enabled` to `true`, then fill in
+`telegram.token` with your bot token and `telegram.chat_id` with the destination
+chat ID. Alerts are sent when a monitored host changes between online and
+offline. Set `enabled` to `false` to disable them.
 
 ### Run NOCBox
 ```shell

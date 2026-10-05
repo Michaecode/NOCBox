@@ -1,10 +1,12 @@
 import time
 import os
+import asyncio
 
 from config import load_config
 from monitor.ping import ping_host
 from ui.screen import tui
 from utils.logger import log_event
+from notifications.telegram import send_telegram_notification
 
 def main():
     os.system("clear")
@@ -32,6 +34,11 @@ def main():
                     if old_status == False:
                         message = (f"Host {name} changed state OFFLINE --> ONLINE")
                     log_event(message)
+                    asyncio.run(
+                        send_telegram_notification(
+                            config.get("telegram"), message
+                        )
+                    )
             previous_status[name] = status
         devices = len(hosts_status)
         offline = devices - online

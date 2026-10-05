@@ -5,3 +5,8 @@ hosts:
 
   switch:
     ip: 172.16.0.7
+
+telegram:
+  enabled: true
+  chat_id: "Your chat ID"
+  token: "Your token ID"
